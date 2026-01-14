@@ -1,0 +1,87 @@
+```
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                                                                               ║
+║                        T H E   S A C R E D   F L O W                          ║
+║                                                                               ║
+║                 Every Contribution. Every Time. No Exceptions.                ║
+║                                                                               ║
+╠═══════════════════════════════════════════════════════════════════════════════╣
+║                                                                               ║
+║                                                                               ║
+║     ┌──────────┐     ┌──────────┐     ┌──────────┐     ┌──────────┐          ║
+║     │          │     │          │     │          │     │          │          ║
+║     │  ISSUE   │────►│  BRANCH  │────►│   CODE   │────►│  COMMIT  │          ║
+║     │          │     │          │     │          │     │          │          ║
+║     └──────────┘     └──────────┘     └──────────┘     └──────────┘          ║
+║          │                                                   │               ║
+║          │                                                   ▼               ║
+║          │           ┌──────────┐     ┌──────────┐     ┌──────────┐          ║
+║          │           │          │     │          │     │          │          ║
+║          │           │  CLOSE   │◄────│  MERGE   │◄────│   PUSH   │          ║
+║          │           │          │     │          │     │          │          ║
+║          │           └──────────┘     └──────────┘     └──────────┘          ║
+║          │                │                ▲                │               ║
+║          │                │                │                ▼               ║
+║          │                │           ┌──────────┐     ┌──────────┐          ║
+║          │                │           │          │     │          │          ║
+║          │                └──────────►│  REVIEW  │◄────│    PR    │          ║
+║          │                            │          │     │          │          ║
+║          │                            └──────────┘     └──────────┘          ║
+║          │                                                                   ║
+║          └───────────────── Closes #N ───────────────────────────────────────╯
+║                                                                               ║
+║                                                                               ║
+╠═══════════════════════════════════════════════════════════════════════════════╣
+║                                                                               ║
+║  COMMANDS AT EACH STAGE                                                       ║
+║  ═══════════════════════                                                      ║
+║                                                                               ║
+║  ISSUE    Create on GitHub. Note the number (#42).                           ║
+║                                                                               ║
+║  BRANCH   git checkout main                                                  ║
+║           git pull origin main                                               ║
+║           git checkout -b feature/42-description                             ║
+║                                                                               ║
+║  CODE     (do your work)                                                     ║
+║                                                                               ║
+║  COMMIT   git add .                                                          ║
+║           git commit -m "feat: description - Refs #42"                       ║
+║                                                                               ║
+║  PUSH     git push origin feature/42-description                             ║
+║                                                                               ║
+║  PR       Create on GitHub. Body includes: Closes #42                        ║
+║                                                                               ║
+║  REVIEW   Request from teammate. Actually read their feedback.               ║
+║                                                                               ║
+║  MERGE    Squash and merge. Delete branch.                                   ║
+║                                                                               ║
+║  CLOSE    Automatic when "Closes #42" was in PR body.                        ║
+║                                                                               ║
+╠═══════════════════════════════════════════════════════════════════════════════╣
+║                                                                               ║
+║  BRANCH NAMING                           COMMIT TYPES                         ║
+║  ══════════════                          ════════════                         ║
+║                                                                               ║
+║  feature/42-add-login                    feat:     new capability             ║
+║  fix/43-crash-on-empty-input             fix:      bug fix                    ║
+║  docs/44-update-readme                   docs:     documentation              ║
+║  refactor/45-cleanup-auth                refactor: code improvement           ║
+║                                          test:     adding tests               ║
+║                                          chore:    maintenance                ║
+║                                                                               ║
+╠═══════════════════════════════════════════════════════════════════════════════╣
+║                                                                               ║
+║  IF SOMETHING GOES WRONG                                                      ║
+║  ═══════════════════════                                                      ║
+║                                                                               ║
+║  "I'm on wrong branch"      git stash → git checkout right-branch → git pop  ║
+║  "Push rejected"            git pull origin main → resolve → push again      ║
+║  "Committed wrong message"  git commit --amend (if not pushed yet)           ║
+║  "Everything is on fire"    git status → breathe → ask for help              ║
+║                                                                               ║
+╠═══════════════════════════════════════════════════════════════════════════════╣
+║                                                                               ║
+║                    Ship fast. Learn faster. Iterate always.                   ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+```
